@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wael Khayati | CV</title>
-    <link rel="icon" href="https://i.imgur.com/DhztbHE.png"> <!--Icon-->
-    <meta property="og:image" content="https://i.imgur.com/NdD8Cjl.png" /> <!--Thumbnail-->
+    <link rel="icon" href="https://i.imgur.com/P8ldVGW.png"> <!--Icon-->
+    <meta property="og:image" content="https://i.imgur.com/DhztbHE.png" /> <!--Thumbnail-->
     <meta name="description" content="I am currently a sophomore student in business science administration at Tunis Business School. I am looking to major in IT and minor in business analytics. Passionate about web development and graphic design, I am looking for a summer internship in order to polish my skills. Being curious and dynamic, I always try to develop my knowledge in the field of my studies and my passion."> <!--Description-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--fonts-->
@@ -108,13 +108,12 @@
             flex-direction: column;
             display: flex;
             justify-content: flex-end;
-            padding: 10px;
+            padding: 20px;
             margin: -70px auto 0 auto;
         }
 
-
         #student{
-            padding-top: 100px;
+            padding-top: 80px;
         }
 
         #name-placeholder{
@@ -196,9 +195,29 @@
                 width: 200px;
             }
         }
+
+        @media (max-width: 768px){
+            #collapseExample1, #collapseExample2, #collapseExample3{
+                margin-left: -45px;
+            }
+        }
+
+        @media (max-width: 368px){
+            h1{
+                font-size: 7.6vw;
+            }
+        }
+
+        #google_translate_element{
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+
     </style>
 </head>
 <body>
+    <div id="google_translate_element"></div> 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
@@ -506,4 +525,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript"> 
+        function googleTranslateElementInit() { 
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'}, 
+                'google_translate_element'
+            ); 
+        } 
+    </script> 
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 </body>
