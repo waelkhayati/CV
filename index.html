@@ -111,6 +111,8 @@
             display: flex;
             justify-content: flex-end;
             padding: 20px;
+            width: 100%;
+            height: 40%;
             margin: -70px auto 0 auto;
         }
 
@@ -217,17 +219,28 @@
             }
 
             h1{
+                margin-top: -100px;
                 text-align: center;
             }
             
             #moreinfo{
                 margin-top: 60px;
-                text-align: center;
+                
             }
 
             h1{
                 font-size: 7.6vw;
             }
+
+            #togglewhite{
+                text-align: left;
+                background-color: white;
+                border-radius: 20px;
+                padding: 45px 0 0 0;
+                width: 100%;
+                margin: 20px 0 0 0;
+            }
+            
         }
 
         #google_translate_element{
@@ -248,8 +261,8 @@
                     <img alt="Portrait_Image" src="https://i.imgur.com/DhztbHE.png" class="rounded-circle">
                 </div>
                 <div id="image-base">
-                    <div id="student"><h2>Student</h2></div>
-                    <div id="age"><h3>21 Years Old</h3></div>
+                    <div id="student"><h2 id="Student">Student</h2></div>
+                    <div id="age"><h3 id="age">21 Years Old</h3></div>
                 </div>
                 </div>
             </div>
@@ -266,11 +279,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div id="white-box">
-                            <h4>
+                            <h4 id="titre1">
                                 About Me
                             </h4>
-                            <p>
-                                I am currently a sophomore student in business science administration at Tunis Business School. I am looking to major in IT and minor in business analytics. Passionate about web development and graphic design, I am looking for a summer internship in order to polish my skills. Being curious and dynamic, I always try to develop my knowledge in the field of my studies and my passion.
+                            <p id="para1">
+                                I am currently a sophomore student in business science administration at Tunis Business School. I majored in IT and minored in business analytics. Passionate about graphic design and web development, I am looking for a job opportunity in order to polish my skills. Being curious and dynamic, I always try to develop my knowledge in the field of my studies and my passion through freelance and volunteering in clubs and organizations.
                             </p>
                         </div>
                     </div>
@@ -280,15 +293,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-4" id="moreinfo">
-                        <div class="row">
-                            <div class="col-md-12" id="more-info-placeholder">
+                    <div class="col-md-4" id="moreinfo"  >
+                        <div class="row" id="togglewhite">
+                            <div class="col-md-12" id="more-info-placeholder" style="width:90%">
                                 <div id="h4-placeholder">
-                                    <h4>  
-                                        <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">How to Reach Me</a>
-                                    </h4>
+                                    <h4 id="titre2">How to Reach Me</h4>
                                 </div>
-                                <div class="collapse" id="collapseExample1">
+                                <div>
                                     <div>
                                         <ul id="list-1">
                                             <li class="list-item">
@@ -314,6 +325,13 @@
                                                 <p>
                                                     <a href="https://github.com/waelkhayati" target="_blank">github.com/waelkhayati</a>
                                                 </p>
+                                            </li><li class="list-item">
+                                                <h5>
+                                                    Behance:
+                                                </h5>
+                                                <p>
+                                                    <a href="https://www.behance.net/khayatiwael" target="_blank">behance.net/khayatiwael</a>
+                                                </p>
                                             </li>
                                             <li class="list-item">
                                                 <h5>
@@ -324,19 +342,19 @@
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5>
+                                                <h5 id="titre3">
                                                     Address 1:
                                                 </h5>
                                                 <p>
-                                                    <a href="https://goo.gl/maps/zhuBk1xQ3sSU61Pv9" target="_blank">4, Qatmir St Nabeul, 8000</a>
+                                                    <a href="https://goo.gl/maps/zhuBk1xQ3sSU61Pv9" target="_blank" id="para3">4, Qatmir St Nabeul, 8000</a>
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5>
+                                                <h5 id="titre4">
                                                     Address 2:
                                                 </h5>
-                                                <p>
-                                                    <a href="https://goo.gl/maps/9vWm1uyyNJGT7p4X8" target="_blank">B13 Mariem Res, Martyrs StMourouj 6, 2074</a>
+                                                <p >
+                                                    <a href="https://goo.gl/maps/9vWm1uyyNJGT7p4X8" target="_blank" id="para4">B13 Mariem Res, Martyrs StMourouj 6, 2074</a>
                                                 </p>
                                             </li>
                                         </ul>
@@ -345,58 +363,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row" id="togglewhite">
+                            <div class="col-md-12" >
                                 <div id="h4-placeholder">
-                                    <h4>  
-                                        <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Languages</a>
-                                    </h4>
+                                    <h4 id="titre5">Languages</h4>
                                 </div>
-                                <div class="collapse" id="collapseExample2">
+                                <div>
                                     <div>
                                         <ul id="list-1">
                                             <li class="list-item">
-                                                <h5>
+                                                <h5 id="titre6">
                                                     Arabic
                                                 </h5>
-                                                <p>
+                                                <p id="para6">
                                                     Native                                            
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5>
+                                                <h5 id="titre7">
                                                     English
                                                 </h5>
-                                                <p>
+                                                <p id="para7">
                                                     Professional, Fluent
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5>
+                                                <h5 id="titre8">
                                                     French
                                                 </h5>
-                                                <p>
+                                                <p id="para8">
                                                     Conversational, Basic
                                                 </p>
                                             </li>
                                         </ul>
-                                        <br><br><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div id="h4-placeholder">
-                                    <h4>  
-                                        <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Soft Skills</a>
-                                    </h4>
-                                    <div class="collapse" id="collapseExample3">
-                                        <div>
-                                            <p>
-                                                Public speaking, Team Work, Communication, Creativity, Adaptability, Problem solving, Time management, Decision making, Critical thinking 
-                                            </p> 
-                                        </div>
                                         <br><br><br>
                                     </div>
                                 </div>
@@ -407,56 +406,66 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div id="white-box">
-                                    <h4>
+                                    <h4 id="titre9">
                                         Academic Education
                                     </h4>
                                     <h5>
                                         <a href="http://www.tunis-business-school.tn/" target="_blank">Tunis Business School</a>
                                     </h5>
-                                    <span id="date">
-                                        2019 - currently
+                                    <span id="date" >
+                                       <span id="soutitre9">2019 - currently</span> 
                                     </span>
                                     <ul>
                                         <li>Bachelor in Bussiness Sciences administration</li>
                                     </ul>
                                     <br>
-                                    <h5>
+                                    <h5 id="titre10">
                                         <a href="http://www.ipein.rnu.tn/Fr/accueil_46_3" target="_blank">Preparatory Institute for Engineering Studies Nabeul</a>                                       
                                     </h5>
                                     <span id="date">
                                         2018 - 2019
                                     </span>
                                     <ul>
-                                        <li>1st grade MP</li>
+                                        <li id="para10">1st grade MP</li>
                                     </ul>
                                     <br>
-                                    <h5>
+                                    <h5 id="titre11">
                                         <a href="https://www.linkedin.com/company/lmmn/about/" target="_blank">Mahmoud Messadi Highschool Nabeul</a>
                                     </h5>
                                     <span id="date">
                                         2014 - 2018
                                     </span>
                                     <ul>
-                                        <li>Baccalaureate in Mathematics</li>
+                                        <li id=para11>Baccalaureate in Mathematics</li>
                                     </ul>                                    
                                 </div>
                                 <div id="white-box">
-                                    <h4>
+                                    <h4 id="titre12">
                                         Hard Skills
                                     </h4>
-                                    <h5>
-                                        Coding Languages / Libraries:
-                                    </h5>
-                                    <p>
-                                        HTML/CSS, JavaScript, PHP, MySQL, Python, C, Bootstrap
-                                    </p>
-                                    <br>
-                                    <h5>
+                                    <h5 id="titre13">
                                         Graphic Design Tools:
                                     </h5>
-                                    <p>
+                                    <p id="para13">
                                         Adobe Photoshop, Adobe Illustrator, Adobe Indesign, Adobe After Effects, 3DS Max, Figma
                                     </p>
+                                    <h5 id="titre14">
+                                        Coding Languages / Libraries:
+                                    </h5>
+                                    <p id="para14">
+                                        HTML/CSS, JavaScript, PHP, MySQL, Python, C, Bootstrap
+                                    </p>
+                                    <br>                                   
+                                </div>
+                                <div id="white-box">
+                                    <h4 id="titre15">
+                                        Soft Skills
+                                    </h4>
+                                    <div>
+                                        <p id="para15">
+                                            Public speaking, Team Work, Communication, Creativity, Adaptability, Problem solving, Time management, Decision making, Critical thinking 
+                                        </p> 
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
@@ -469,30 +478,30 @@
                             </div>
                             <div class="col-md-6">
                                 <div id="white-box">
-                                    <h4>
+                                    <h4 id="titre16">
                                         Experience & Social Life
                                     </h4>
-                                    <h5>
+                                    <h5 id="titre17">
                                         <a href="https://www.facebook.com/JCINabeul/" target="_blank">JCI Nabeul</a>                                       
                                     </h5>
                                     <span id="date">
-                                        2021 - Currently
+                                        <span id="soustitre17">2021 - Currently</span>
                                     </span>
                                     <ul>
-                                        <li>Observer Member</li>
+                                        <li id="para17">Observer Member</li>
                                     </ul>
                                     <br>
                                     <h5>
                                         Freelance                                        
                                     </h5>
                                     <span id="date">
-                                        2019 - currently
+                                        <span id="soustitre18">2019- Currently</span>
                                     </span>
                                     <ul>
                                         <li>Graphic Designer</li>
                                     </ul>
                                     <br>
-                                    <h5>
+                                    <h5 id="titre18">
                                         <a href="https://www.facebook.com/MERITtbs" target="_blank">MERIT TBS (IT Club)</a>
                                     </h5>
                                     <span id="date">
@@ -500,8 +509,8 @@
                                     </span>
                                     <ul>
                                         <li>Graphic Designer</li>
-                                        <li>Graphic Design Coach</li>
-                                        <li>Vice President of Marketing & Communcation</li>
+                                        <li id="para18">Graphic Design Coach</li>
+                                        <li>Vice President, Marketing & Communcation</li>
                                     </ul>
                                     <br>
                                     <h5>
@@ -516,23 +525,15 @@
                                     <br>
                                     <hr>
                                     <br><br><br>
-                                    <h5>
+                                    <h5 id="titre19">
                                        Projects
                                     </h5>
                                     <span id="date">
-                                        Websites
+                                        <span id="soustitre19">Websites</span>
                                     </span>
                                     <ul>
                                         <li>
                                             <a href="www.wael-khayati-portfolio.rf.gd" target="_blank">www.wael-khayati-portfolio.rf.gd</a>                                            
-                                        </li>
-                                    </ul>
-                                    <span id="date">
-                                        Graphic Design
-                                    </span>
-                                    <ul>
-                                        <li>
-                                            <a href="www.deviantart.com/thezombisto-gfx" target="_blank">www.deviantart.com/<br>thezombisto-gfx</a> 
                                         </li>
                                     </ul>
                                 </div>
@@ -556,4 +557,10 @@
         } 
     </script> 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+    <script>
+        function changelanguagefr() {
+            document.getElementById(id).innerHTML = new HTML
+
+        }
+    </script>
 </body>
