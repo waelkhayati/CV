@@ -1,259 +1,328 @@
-<html lang="en-US">
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wael Khayati | CV</title>
-    <link rel="icon" href="https://i.imgur.com/P8ldVGW.png"> <!--Icon-->
+    <link rel="icon" href="https://i.imgur.com/0TDnOcF.png"> <!--Icon-->
     <meta property="og:image" content="https://i.imgur.com/DhztbHE.png" /> <!--Thumbnail-->
     <meta name="description" content="I am currently a sophomore student in business science administration at Tunis Business School. I am looking to major in IT and minor in business analytics. Passionate about web development and graphic design, I am looking for a summer internship in order to polish my skills. Being curious and dynamic, I always try to develop my knowledge in the field of my studies and my passion."> <!--Description-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/LanguageSelector.min.js"></script>
+    <script src="locale.js"></script>
     <!--fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.1.0/css/clear-sans.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Spartan">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Heebo">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arimo">
-
-    <style>
-        body{
-            margin: 100px;
-            background-color: #EFEFEF;
-            text-align: justify;
-        }
-
-        p{
-            color: #5B5E66;
-            font-family: 'Arimo';
-            font-size: 20px;
-        }
-
-        ul{
-            color: #5B5E66;
-            font-size: 20px;
-        }
-
-        li a, li a:hover, li a:focus{
-            color: #5B5E66; 
-        } 
-
-        #list-1{
-            list-style: none;
-        }
-
-        h1{
-            font-family: 'Spartan';
-            color: cadetblue;
-            font-size: 5vw;
-            font-weight: 950;
-            -webkit-text-stroke: 0.3vw cadetblue; /* width and color */
-        }
-
-        h2{
-            font-family: 'clear sans';
-            color: white;
-            font-size: 50px;
-            font-weight: 400;
-            text-align: center;
-        }
-
-        h3{
-            font-family: 'clear sans';
-            color: white;
-            font-size: 30px;
-            font-weight: 350;
-            text-align: center;
-        }
-
-        h4{
-            font-family: 'Heebo';
-            color: cadetblue;
-            font-size: 25px;
-            font-weight: bolder;
-            -webkit-text-stroke: 0.5px cadetblue; /* width and color */
-            margin-bottom: 30px;
-        }
-
-        h4 a, h4 a:hover, h4 a:focus{
-            color: cadetblue;
-        }
-        
-        h5{
-            font-family: 'Heebo';
-            color: black;
-            font-size: 20px;
-            font-weight: bolder;
-        }
-
-        h5 a, h5 a:hover, h5 a:focus{
-            color: black;
-        }
-
-        #date{
-            color: cadetblue;
-            font-weight: 500;
-        }
-
-        #Portrait-image img{
-            border-radius: 100%;
-            width: 280px;
-        }
-
-        #Portrait-image{
-            display: flex;
-            justify-content: center;
-            margin-top: 5%;
-        }
-
-        #image-base{
-            background-color: cadetblue;
-            border-radius: 20px;
-            flex-direction: column;
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px;
-            width: 100%;
-            height: 40%;
-            margin: -70px auto 0 auto;
-        }
-
-        #student{
-            padding-top: 80px;
-        }
-
-        #name-placeholder{
-            margin: 98px 0 30px 0; 
-        }
-
-        #white-box{
-            background-color: white;
-            border-radius: 20px;
-            padding: 45px 30px 45px 30px;
-
-            width: 100%;
-
-            margin: 20px 0 0 0;
-        }
-
-        #h4-placeholder{
-            margin: 0 40px 40px 40px;
-        }
-
-        hr{
-            margin-top: 50px;
-            width: 100%;
-            border-top: 2px #5B5E66 solid;
-        }
-
-        /*>scrollbar*/
-
-            /* width */
-            ::-webkit-scrollbar {
-            width: 10px;
-            }
-
-            /* Track */
-            ::-webkit-scrollbar-track {
-            background: white; 
-            }
-            
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-            background: cadetblue; 
-            }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-            background: rgb(76, 119, 121); 
-            }
-        
-        @media (max-width:1250px) {
-            #Portrait-image img{
-                width: 250px;
-            }
-
-            #image-placeholder{
-                margin-top: 11%; 
-            }
-
-        }
-
-        @media (max-width:1100px) {
+    
+        <style>
             body{
-                margin: 10px;
+                margin: 0 100px 100px 100px;
+                background-color: #EFEFEF;
+                text-align: justify;
+            }
+            section{
+                margin-top: 100px;
             }
 
-            #white-box{
-                margin: 20px 0 0 0;
+            p{
+                color: #5B5E66;
+                font-family: 'Arimo';
+                font-size: 20px;
             }
-
-            #name-placeholder{
-                margin-top: 50px;
+    
+            ul{
+                color: #5B5E66;
+                font-size: 20px;
             }
-
+    
+            li a, li a:hover, li a:focus{
+                color: #5B5E66; 
+            } 
+    
+            #list-1{
+                list-style: none;
+            }
+    
             h1{
-                font-size: 6.2vw;                
+                font-family: 'Spartan';
+                color: cadetblue;
+                font-size: 5vw;
+                font-weight: 950;
+                -webkit-text-stroke: 0.3vw cadetblue; /* width and color */
             }
-
-            #image-placeholder{
-                margin-top: -7%; 
-            }
-        }
-
-        @media (max-width:950px) {
-            #Portrait-image img{
-                width: 200px;
-            }
-
-            #image-placeholder{
-                margin-top: 12%; 
-            }
-
-            h1{
-                font-size: 6vw;                
-            }
-        }
-
-        @media (max-width: 768px){
-            #collapseExample1, #collapseExample2{
-                margin-left: -45px;
-            }
-
-            h1{
-                margin-top: -100px;
+    
+            h2{
+                font-family: 'clear sans';
+                color: white;
+                font-size: 50px;
+                font-weight: 400;
                 text-align: center;
             }
+    
+            h3{
+                font-family: 'clear sans';
+                color: white;
+                font-size: 30px;
+                font-weight: 350;
+                text-align: center;
+            }
+    
+            h4{
+                font-family: 'Heebo';
+                color: cadetblue;
+                font-size: 25px;
+                font-weight: bolder;
+                -webkit-text-stroke: 0.5px cadetblue; /* width and color */
+                margin-bottom: 30px;
+            }
+    
+            h4 a, h4 a:hover, h4 a:focus{
+                color: cadetblue;
+            }
             
-            #moreinfo{
-                margin-top: 60px;
-                
+            h5{
+                font-family: 'Heebo';
+                color: black;
+                font-size: 20px;
+                font-weight: bolder;
             }
-
-            h1{
-                font-size: 7.6vw;
+    
+            h5 a, h5 a:hover, h5 a:focus{
+                color: black;
             }
-
-            #togglewhite{
-                text-align: left;
+    
+            #date{
+                color: cadetblue;
+                font-weight: 500;
+            }
+    
+            #Portrait-image img{
+                border-radius: 100%;
+                width: 280px;
+            }
+    
+            #Portrait-image{
+                display: flex;
+                justify-content: center;
+                margin-top: 5%;
+            }
+    
+            #image-base{
+                background-color: cadetblue;
+                border-radius: 20px;
+                flex-direction: column;
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+                width: 100%;
+                height: 40%;
+                margin: -70px auto 0 auto;
+            }
+    
+            #student{
+                padding-top: 80px;
+            }
+    
+            #name-placeholder{
+                margin: 98px 0 30px 0; 
+            }
+    
+            #white-box{
                 background-color: white;
                 border-radius: 20px;
-                padding: 45px 0 0 0;
+                padding: 45px 30px 45px 30px;
+    
                 width: 100%;
+    
                 margin: 20px 0 0 0;
             }
+    
+            #h4-placeholder{
+                margin: 0 40px 40px 40px;
+            }
+    
+            hr{
+                margin-top: 50px;
+                width: 100%;
+                border-top: 2px #5B5E66 solid;
+            }
+    
+            .form-style{
+                border-radius: 20px;
+                border: 2px grey solid;
+                width: 100%;
+                height: 50px;
+            }
+    
+            .textarea-style{
+                border-radius: 20px;
+                border: 2px grey solid;
+                width: 100%;
+                height: 100%;
+            }
+    
+            .form-style::placeholder{
+                padding-left: 13px;
+            }
+    
+            .textarea-style::placeholder{
+                padding-left: 13px;
+                padding-top: 7px;
+            }
+    
             
-        }
+    
+            /*>scrollbar*/
+    
+                /* width */
+                ::-webkit-scrollbar {
+                width: 10px;
+                }
+    
+                /* Track */
+                ::-webkit-scrollbar-track {
+                background: white; 
+                }
+                
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                background: cadetblue; 
+                }
+    
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                background: rgb(76, 119, 121); 
+                }
+            
+            @media (max-width:1250px) {
+                #Portrait-image img{
+                    width: 250px;
+                }
+    
+                #image-placeholder{
+                    margin-top: 11%; 
+                }
+    
+            }
+    
+            @media (max-width:1100px) {
+                body{
+                    margin: 10px;
+                }
+    
+                #white-box{
+                    margin: 20px 0 0 0;
+                }
+    
+                #name-placeholder{
+                    margin-top: 50px;
+                }
+    
+                h1{
+                    font-size: 6.2vw;                
+                }
+    
+                #image-placeholder{
+                    margin-top: -7%; 
+                }
+            }
+    
+            @media (max-width:950px) {
+                #Portrait-image img{
+                    width: 200px;
+                }
+    
+                #image-placeholder{
+                    margin-top: 12%; 
+                }
+    
+                h1{
+                    font-size: 6vw;                
+                }
+            }
+    
+            @media (max-width: 768px){
+                #collapseExample1, #collapseExample2{
+                    margin-left: -45px;
+                }
+    
+                h1{
+                    margin-top: -100px;
+                    text-align: center;
+                }
+                
+                #moreinfo{
+                    margin-top: 60px;
+                    
+                }
+    
+                h1{
+                    font-size: 7.6vw;
+                }
+    
+                #togglewhite{
+                    text-align: left;
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 45px 0 0 0;
+                    width: 100%;
+                    margin: 20px 0 0 0;
+                }
+                
+                #image-placeholder{
+                    margin-bottom: 100px; 
+                }
+                
+            }
+    
+            #google_translate_element{
+                text-align: right;
+                margin-bottom: 30px;
+            }
+    
+            nav{
+                width: 95%;
+                margin: 0 auto;
+            }
+       
+            .langSelection{
+                width: 120px;
+                height: 50px;
+                border-radius: 20px;
+                margin-top: -50px;
+                border: none;
+                background-color: rgba(255, 255, 255, 0.61);
+                position: fixed;
+                z-index: 1;
+                box-shadow: 2px 2px 4px #00000028;
+                text-align: center;
+                appearance: none;
+                color: rgba(0, 0, 0, 0.589);
+                outline: none !important;
+            }
+            .langSelection:hover{
+                color: black;
+                
+            }
+        </style>
 
-        #google_translate_element{
-            text-align: right;
-            margin-bottom: 30px;
-        }
-
-
-    </style>
-</head>
-<body>
-    <div id="google_translate_element"></div> 
-    <div class="container-fluid">
+  </head>
+  <body>
+    <nav class=".navbar .navbar-expand">
+        <select id="langSelector" class="langSelection">
+            <option>:choose </option>
+            <option value="en">:english</option>
+            <option value="fr">:french</option>
+        </select>
+    
+    </nav>
+    <section>
+      <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
                 <div id="image-placeholder">
@@ -261,8 +330,8 @@
                     <img alt="Portrait_Image" src="https://i.imgur.com/DhztbHE.png" class="rounded-circle">
                 </div>
                 <div id="image-base">
-                    <div id="student"><h2 id="Student">Student</h2></div>
-                    <div id="age"><h3 id="age">21 Years Old</h3></div>
+                    <div id="student"><h2 id="Student">:occupation</h2></div>
+                    <div id="age"><h3 id="age">:age</h3></div>
                 </div>
                 </div>
             </div>
@@ -280,10 +349,10 @@
                     <div class="col-md-12">
                         <div id="white-box">
                             <h4 id="titre1">
-                                About Me
+                                :about
                             </h4>
                             <p id="para1">
-                                I am currently a sophomore student in business science administration at Tunis Business School. I majored in IT and minored in business analytics. Passionate about graphic design and web development, I am looking for a job opportunity in order to polish my skills. Being curious and dynamic, I always try to develop my knowledge in the field of my studies and my passion through freelance and volunteering in clubs and organizations.
+                                :aboutpara
                             </p>
                         </div>
                     </div>
@@ -297,13 +366,14 @@
                         <div class="row" id="togglewhite">
                             <div class="col-md-12" id="more-info-placeholder" style="width:90%">
                                 <div id="h4-placeholder">
-                                    <h4 id="titre2">How to Reach Me</h4>
+                                    <h4 id="titre2">:contact</h4>
                                 </div>
                                 <div>
                                     <div>
                                         <ul id="list-1">
                                             <li class="list-item">
                                                 <h5>
+                                                    <i class="fa fa-phone" style="font-size:32px"></i> 
                                                     Mobile:
                                                 </h5>
                                                 <p>
@@ -312,6 +382,7 @@
                                             </li>
                                             <li class="list-item">
                                                 <h5>
+                                                    <i class="fa fa-envelope" style="font-size:30px"></i> 
                                                     E-Mail:
                                                 </h5>
                                                 <p>
@@ -319,22 +390,9 @@
                                                 </p>
                                             </li>
                                             <li class="list-item">
+                                                
                                                 <h5>
-                                                    GitHub:
-                                                </h5>
-                                                <p>
-                                                    <a href="https://github.com/waelkhayati" target="_blank">github.com/waelkhayati</a>
-                                                </p>
-                                            </li><li class="list-item">
-                                                <h5>
-                                                    Behance:
-                                                </h5>
-                                                <p>
-                                                    <a href="https://www.behance.net/khayatiwael" target="_blank">behance.net/khayatiwael</a>
-                                                </p>
-                                            </li>
-                                            <li class="list-item">
-                                                <h5>
+                                                    <i class="fa fa-linkedin-square" style="font-size:32px"></i> 
                                                     Linkedin:
                                                 </h5>
                                                 <p>
@@ -342,19 +400,49 @@
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5 id="titre3">
-                                                    Address 1:
+                                                <h5>
+                                                    <i class="fa fa-github" style="font-size:32px"></i> 
+                                                    GitHub:
                                                 </h5>
                                                 <p>
-                                                    <a href="https://goo.gl/maps/zhuBk1xQ3sSU61Pv9" target="_blank" id="para3">4, Qatmir St Nabeul, 8000</a>
+                                                    <a href="https://github.com/waelkhayati" target="_blank">github.com/waelkhayati</a>
+                                                </p>
+                                            </li><li class="list-item">
+                                                <h5>
+                                                    <i class="fa fa-behance-square" style="font-size:32px"></i> 
+                                                    Behance:
+                                                </h5>
+                                                <p>
+                                                    <a href="https://www.behance.net/waelkhayati" target="_blank">behance.net/waelkhayati</a>
                                                 </p>
                                             </li>
                                             <li class="list-item">
-                                                <h5 id="titre4">
-                                                    Address 2:
+                                                <h5>
+                                                    <i class="fa fa-deviantart" style="font-size:32px"></i> 
+                                                    Deviantart:
+                                                </h5>
+                                                <p>
+                                                    <a href="https://www.deviantart.com/thezombisto-gfx" target="_blank">www.deviantart.com/thezombisto-gfx</a>
+                                                </p>
+                                            </li>
+                                            <li class="list-item">
+                                                
+                                                <h5>
+                                                    <i class="fa fa-map-marker" style="font-size:32px"></i>
+                                                    :address_1:
+                                                </h5>
+                                                <p>
+                                                    <a href="https://goo.gl/maps/zhuBk1xQ3sSU61Pv9" target="_blank" id="para3">:address1</a>
+                                                </p>
+                                            </li>
+                                            <li class="list-item">
+                                                
+                                                <h5>
+                                                    <i class="fa fa-map-marker" style="font-size:32px"></i>
+                                                    :address_2:
                                                 </h5>
                                                 <p >
-                                                    <a href="https://goo.gl/maps/9vWm1uyyNJGT7p4X8" target="_blank" id="para4">B13 Mariem Res, Martyrs StMourouj 6, 2074</a>
+                                                    <a href="https://goo.gl/maps/9vWm1uyyNJGT7p4X8" target="_blank" id="para4">:address2</a>
                                                 </p>
                                             </li>
                                         </ul>
@@ -366,33 +454,33 @@
                         <div class="row" id="togglewhite">
                             <div class="col-md-12" >
                                 <div id="h4-placeholder">
-                                    <h4 id="titre5">Languages</h4>
+                                    <h4 id="titre5">:languages</h4>
                                 </div>
                                 <div>
                                     <div>
                                         <ul id="list-1">
                                             <li class="list-item">
                                                 <h5 id="titre6">
-                                                    Arabic
+                                                    :lang1
                                                 </h5>
                                                 <p id="para6">
-                                                    Native                                            
+                                                    :level1                                           
                                                 </p>
                                             </li>
                                             <li class="list-item">
                                                 <h5 id="titre7">
-                                                    English
+                                                    :lang2
                                                 </h5>
                                                 <p id="para7">
-                                                    Professional, Fluent
+                                                    :level2
                                                 </p>
                                             </li>
                                             <li class="list-item">
                                                 <h5 id="titre8">
-                                                    French
+                                                    :lang3
                                                 </h5>
                                                 <p id="para8">
-                                                    Conversational, Basic
+                                                    :level3
                                                 </p>
                                             </li>
                                         </ul>
@@ -407,50 +495,50 @@
                             <div class="col-md-6">
                                 <div id="white-box">
                                     <h4 id="titre9">
-                                        Academic Education
+                                        :education
                                     </h4>
                                     <h5>
-                                        <a href="http://www.tunis-business-school.tn/" target="_blank">Tunis Business School</a>
+                                        <a href="http://www.tunis-business-school.tn/" target="_blank">:school3</a>
                                     </h5>
                                     <span id="date" >
-                                       <span id="soutitre9">2019 - currently</span> 
+                                       <span id="soutitre9">2019 - :currently1</span> 
                                     </span>
                                     <ul>
-                                        <li>Bachelor in Bussiness Sciences administration</li>
+                                        <li>:edu3</li>
                                     </ul>
                                     <br>
                                     <h5 id="titre10">
-                                        <a href="http://www.ipein.rnu.tn/Fr/accueil_46_3" target="_blank">Preparatory Institute for Engineering Studies Nabeul</a>                                       
+                                        <a href="http://www.ipein.rnu.tn/Fr/accueil_46_3" target="_blank">:school2</a>                                       
                                     </h5>
                                     <span id="date">
                                         2018 - 2019
                                     </span>
                                     <ul>
-                                        <li id="para10">1st grade MP</li>
+                                        <li id="para10">:edu2</li>
                                     </ul>
                                     <br>
                                     <h5 id="titre11">
-                                        <a href="https://www.linkedin.com/company/lmmn/about/" target="_blank">Mahmoud Messadi Highschool Nabeul</a>
+                                        <a href="https://www.linkedin.com/company/lmmn/about/" target="_blank">:school1</a>
                                     </h5>
                                     <span id="date">
                                         2014 - 2018
                                     </span>
                                     <ul>
-                                        <li id=para11>Baccalaureate in Mathematics</li>
+                                        <li id=para11>:edu1</li>
                                     </ul>                                    
                                 </div>
                                 <div id="white-box">
                                     <h4 id="titre12">
-                                        Hard Skills
+                                        :hardskills
                                     </h4>
                                     <h5 id="titre13">
-                                        Graphic Design Tools:
+                                        :gfx
                                     </h5>
                                     <p id="para13">
                                         Adobe Photoshop, Adobe Illustrator, Adobe Indesign, Adobe After Effects, 3DS Max, Figma
                                     </p>
                                     <h5 id="titre14">
-                                        Coding Languages / Libraries:
+                                        :dev
                                     </h5>
                                     <p id="para14">
                                         HTML/CSS, JavaScript, PHP, MySQL, Python, C, Bootstrap
@@ -459,11 +547,11 @@
                                 </div>
                                 <div id="white-box">
                                     <h4 id="titre15">
-                                        Soft Skills
+                                        :softskills
                                     </h4>
                                     <div>
                                         <p id="para15">
-                                            Public speaking, Team Work, Communication, Creativity, Adaptability, Problem solving, Time management, Decision making, Critical thinking 
+                                            :softtools 
                                         </p> 
                                     </div>
                                 </div>
@@ -479,37 +567,47 @@
                             <div class="col-md-6">
                                 <div id="white-box">
                                     <h4 id="titre16">
-                                        Experience & Social Life
+                                        :experience
                                     </h4>
                                     <h5 id="titre17">
+                                        <a href="https://www.linkedin.com/company/formalab.tn/" target="_blank">Formalab</a>                                       
+                                    </h5>
+                                    <span id="date">
+                                        <span id="soustitre17"> Aug 2021 - Sep 2021</span>
+                                    </span>
+                                    <ul>
+                                        <li id="para17">:expdesc4</li>
+                                    </ul>
+                                    <br>
+                                    <h5 id="titre18">
                                         <a href="https://www.facebook.com/JCINabeul/" target="_blank">JCI Nabeul</a>                                       
                                     </h5>
                                     <span id="date">
-                                        <span id="soustitre17">2021 - Currently</span>
+                                        <span id="soustitre18">2021 - :currently2</span>
                                     </span>
                                     <ul>
-                                        <li id="para17">Observer Member</li>
+                                        <li id="para18">:expdesc3</li>
                                     </ul>
                                     <br>
                                     <h5>
                                         Freelance                                        
                                     </h5>
                                     <span id="date">
-                                        <span id="soustitre18">2019- Currently</span>
+                                        <span id="soustitre19">2019- :currently3</span>
                                     </span>
                                     <ul>
-                                        <li>Graphic Designer</li>
+                                        <li>:designer1</li>
                                     </ul>
                                     <br>
-                                    <h5 id="titre18">
+                                    <h5 id="titre19">
                                         <a href="https://www.facebook.com/MERITtbs" target="_blank">MERIT TBS (IT Club)</a>
                                     </h5>
                                     <span id="date">
                                         2019 - 2021
                                     </span>
                                     <ul>
-                                        <li>Graphic Designer</li>
-                                        <li id="para18">Graphic Design Coach</li>
+                                        <li>:designer2</li>
+                                        <li id="para19">:expdesc2</li>
                                         <li>Vice President, Marketing & Communcation</li>
                                     </ul>
                                     <br>
@@ -520,16 +618,16 @@
                                         2020
                                     </span>
                                     <ul>
-                                        <li>Graphic Designer & Community Manager</li>
+                                        <li>:designer3 & Community Manager</li>
                                     </ul>
                                     <br>
                                     <hr>
                                     <br><br><br>
-                                    <h5 id="titre19">
-                                       Projects
+                                    <h5 id="titre20">
+                                       :projects
                                     </h5>
                                     <span id="date">
-                                        <span id="soustitre19">Websites</span>
+                                        <span id="soustitre20">:websites</span>
                                     </span>
                                     <ul>
                                         <li>
@@ -541,26 +639,44 @@
                         </div>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
+        <div class="row" id="white-box" hidden>
+            <div class="col-md-4">
+                <img src="https://i.imgur.com/Zs7m2tT.png" alt="Image">
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="">
+                            <div class="row m-2">
+                                <input class="form-style" type="text" name="name" required placeholder="Full Name">
+                             </div>
+                             <div class="row m-2">
+                                <input class="form-style" type="email" name="email" required placeholder="Email">
+                            </div>
+                            <div class="row m-2">
+                                <textarea class="textarea-style" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script type="text/javascript"> 
-        function googleTranslateElementInit() { 
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'}, 
-                'google_translate_element'
-            ); 
-        } 
-    </script> 
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-    <script>
-        function changelanguagefr() {
-            document.getElementById(id).innerHTML = new HTML
-
-        }
-    </script>
-</body>
+    </section>
+  </body>
+  <script type="text/javascript">
+    var l = new LanguageSelector();
+    $(document).on("change", "#langSelector", function () {
+      var s = $(this).children("option:selected").val();
+      l.setLang(s);
+      window.location = "index.html";
+    });
+    l.parse();
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
